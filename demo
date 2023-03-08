@@ -1,0 +1,12 @@
+import time
+
+# Определение функции таймера
+def countdown_timer(seconds):
+    # Цикл, который выводит на экран оставшееся время таймера с точностью до секунды
+    for i in range(seconds, 0, -1):
+        print(f"Осталось {i} секунд.")
+        time.sleep(1)
+    print("Время истекло!")
+
+# Запуск таймера
+countdown_timer(10)
